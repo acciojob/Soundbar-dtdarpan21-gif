@@ -1,10 +1,10 @@
 //your JS code here. If required.
 const buttons = document.querySelectorAll(".btn");
-const buttons = document.querySelectorAll(".stop");
+const stopButton = document.querySelector(".stop");
 
 let currentAudio = null;
 buttons.forEach(function(button)){
-	button.addEventListener("click, function ()"){
+	button.addEventListener("click", function (){
 		if(currentAudio){
 			currentAudio.pause();
 			currentAudio.currentTime = 0;
